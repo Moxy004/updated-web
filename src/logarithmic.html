@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logarithmic Function</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white p-2">
+        <div class="max-w-1xl mx-auto px-6 py-3 justify-between items-center">
+            <h1 class="text-2xl font-bold text-white-600">Math-Anaria</h1>
+        <h2 class="text-lg font-medium">General Mathematics Module</h2>
+        <h3 class="text-md">Topic: Logarithmic Function</h3>
+        </div>
+    </header>
+
+    <main class="max-w-5x-2 mx-auto p-8">
+
+        <section class="bg-gray-50 p-8 rounded-lg shadow-md mb-6">
+            <h3 class="text-blue-700 font-bold text-2xl mb-4">Logarithmic Function Definition</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">In mathematics, the logarithmic function is an inverse function to exponentiation. It is defined as:</p>
+            <p class="text-gray-700 leading-relaxed mb-4">For x > 0, a > 0, and a ≠1, y = loga x if and only if x = a^y. The function is given by f(x) = loga x, where the base of the logarithm is 'a'.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">The most common bases used in logarithmic functions are base 10 (common logarithms) and base e (natural logarithms).</p>
+        </section>
+
+        <section class="bg-gray-50 p-8 rounded-lg shadow-md mb-6">
+            <h3 class="text-blue-700 font-bold text-2xl mb-4">Common Logarithmic Function</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">The logarithmic function with base 10 is called the common logarithmic function and is denoted by log10 or simply log.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">For example, f(x) = log10 x.</p>
+        </section>
+
+        <section class="bg-gray-50 p-8 rounded-lg shadow-md mb-6">
+            <h3 class="text-blue-700 font-bold text-2xl mb-4">Natural Logarithmic Function</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">The logarithmic function with base e is called the natural logarithmic function and is denoted by loge.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">For example, f(x) = loge x.</p>
+        </section>
+
+        <section class="bg-gray-50 p-8 rounded-lg shadow-md mb-6">
+            <h3 class="text-blue-700 font-bold text-2xl mb-4">Logarithmic Functions Properties</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">Logarithmic functions have several important properties that simplify calculations, especially when dealing with products, quotients, or powers. Here are the main properties:</p>
+
+            <ul class="list-disc pl-5 mb-4">
+                <li><strong>Product Rule:</strong> logb(MN) = logb(M) + logb(N) – Multiply two numbers with the same base and add the exponents.</li>
+                <li><strong>Quotient Rule:</strong> logb(M/N) = logb(M) – logb(N) – Divide two numbers with the same base and subtract the exponents.</li>
+                <li><strong>Power Rule:</strong> logb(M^p) = p * logb(M) – Raise an exponential expression to a power and multiply the exponents.</li>
+                <li><strong>Zero Exponent Rule:</strong> loga(1) = 0.</li>
+                <li><strong>Change of Base Rule:</strong> logb(x) = ln(x) / ln(b) or logb(x) = log10(x) / log10(b).</li>
+            </ul>
+        </section>
+
+        <section class="bg-gray-50 p-8 rounded-lg shadow-md mb-6">
+            <h3 class="text-blue-700 font-bold text-2xl mb-4">Other Important Rules of Logarithmic Functions</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">Additional useful rules for logarithmic functions include:</p>
+
+            <ul class="list-disc pl-5 mb-4">
+                <li><strong>logb(b) = 1</strong> (e.g., log10(10) = 1)</li>
+                <li><strong>logb(b^x) = x</strong> (e.g., log10(10^x) = x)</li>
+                <li><strong>Exponentiation of base and logarithm:</strong> b^(logb(x)) = x.</li>
+            </ul>
+        </section>
+
+        <section class="bg-gray-50 p-8 rounded-lg shadow-md mb-6">
+            <h3 class="text-blue-700 font-bold text-2xl mb-4">Logarithmic Function Examples</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">Below are some examples that apply the logarithmic properties:</p>
+
+            <p class="text-gray-700 leading-relaxed mb-4"><strong>Example 1:</strong> Use the properties of logarithms to write the equation as a single logarithm:</p>
+            <p class="text-gray-700 leading-relaxed mb-4">5 log9(x) + 7 log9(y) - 3 log9(z) = log9(x^5) + log9(y^7) - log9(z^3) = log9((x^5 * y^7) / z^3)</p>
+
+            <p class="text-gray-700 leading-relaxed mb-4"><strong>Example 2:</strong> Use the properties of logarithms to write the equation as a single logarithm:</p>
+            <p class="text-gray-700 leading-relaxed mb-4">1/2 log2(x) - 8 log2(y) - 5 log2(z) = log2(x^1/2) - log2(y^8) - log2(z^5) = log2(x^1/2 / (y^8 * z^5))</p>
+        </section>
+    </main>
+
+    <footer class="container mx-auto p-8">
+        <h3 class="text-blue-700 font-bold text-2xl mb-4">References:</h3>
+        <ul class="list-disc pl-5">
+            <li><a href="https://byjus.com/maths/logarithmic-functions/" class="text-blue-600" target="_blank">BYJUS - Logarithmic Functions</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

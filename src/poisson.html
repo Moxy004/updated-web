@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics: Distributions</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-2">
+        <div class="max-w-1xl mx-auto px-6 py-3 justify-between items-center">
+            <h1 class="text-2xl font-bold text-white-600">Math-Anaria</h1>
+        <h2 class="text-lg font-medium">Statistics and Probability Module</h2>
+        <h3 class="text-md">Topic: Binomial and Poisson Distribution</h3>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5x-2 mx-auto p-8">
+        <!-- Binomial Distribution -->
+        <section>
+            <h2 class="text-2xl text-gray-800 font-bold">The Binomial Distribution</h2>
+            <p class="text-gray-700 leading-relaxed mt-4">
+                If a group of patients is given a new drug for the relief of a particular condition, then the proportion (p) being successfully treated can be regarded as estimating the population treatment success rate.
+            </p>
+            <p class="text-gray-700 leading-relaxed mt-4">
+                The sample proportion, p = r/n, is analogous to the sample mean. Binary data (0 for failure, 1 for success) follow the binomial distribution if the population response rate does not change.
+            </p>
+            <div class="bg-gray-50 p-4 rounded-lg shadow-md my-4">
+                <h3 class="text-lg text-blue-700 font-semibold">Binomial Probability Formula</h3>
+                <p class="text-gray-700 mt-2">
+                    P(r responses out of n) = [n! / (r! * (n-r)!)] * π^r * (1-π)^(n-r)
+                </p>
+                <p class="text-gray-700">
+                    Here, n! (read as "n factorial") represents the product of all positive integers up to n, and π represents the success probability.
+                </p>
+            </div>
+        </section>
+
+        <!-- Poisson Distribution -->
+        <section>
+            <h2 class="text-2xl text-gray-800 font-bold">The Poisson Distribution</h2>
+            <p class="text-gray-700 leading-relaxed mt-4">
+                The Poisson distribution describes discrete count data, where the population size (n) is large, the probability of an individual event (π) is small, but the expected number of events (λ = n * π) is moderate.
+            </p>
+            <div class="bg-gray-50 p-4 rounded-lg shadow-md my-4">
+                <h3 class="text-lg text-blue-700 font-semibold">Poisson Probability Formula</h3>
+                <p class="text-gray-700 mt-2">
+                    P(r responses) = (λ^r * e^(-λ)) / r!
+                </p>
+                <p class="text-gray-700">Where e is the exponential constant (approximately 2.718), and λ is the average rate of occurrence.</p>
+            </div>
+        </section>
+
+        <!-- Other Distributions -->
+        <section>
+            <h2 class="text-2xl text-gray-800 font-bold">Other Distributions</h2>
+            <article class="bg-gray-50 p-4 rounded-lg shadow-md mb-4">
+                <h3 class="text-lg text-blue-700 font-semibold">t-distribution</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Used for small sample sizes (n < 30), the t-distribution resembles the Normal distribution but has heavier tails. It provides better estimates for small datasets.
+                </p>
+            </article>
+            <article class="bg-gray-50 p-4 rounded-lg shadow-md mb-4">
+                <h3 class="text-lg text-blue-700 font-semibold">Chi-squared distribution</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    This right-skewed distribution is used in chi-squared tests to assess deviations between observed and expected frequencies or test the independence of categorical variables.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 p-6 text-center">
+        <p class="text-gray-700">© 2024 Statistics Module</p>
+    </footer>
+
+</body>
+</html>

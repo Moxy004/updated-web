@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple and Compound Interest</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <header class="bg-blue-600 text-white p-2">
+        <div class="max-w-1xl mx-auto px-6 py-3 justify-between items-center">
+            <h1 class="text-2xl font-bold text-white-600">Math-Anaria</h1>
+        <h2 class="text-lg font-medium">General Mathematics Module</h2>
+        <h3 class="text-md">Topic: Interest</h3>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="max-w-5x-2 mx-auto p-8">
+
+        <!-- Simple Interest Section -->
+        <section class="bg-gray-50 p-8 rounded-lg shadow-md mb-6">
+            <h2 class="text-gray-800 font-bold text-2xl mb-4">Simple Interest</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Let’s begin by looking at simple interest. What does it mean to invest a principal amount of money P in a bank at a simple interest rate r?</p>
+            <p class="text-gray-700 leading-relaxed mb-4">The bank’s customers are letting the bank use their money for a period of time, and in return, the bank is willing to return their original amount at the end of the period plus extra money called Interest. The interest earned depends on the rate and the period of time.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">For example, if Mrs. Hamlisch puts $200 into a savings account at 12% interest, at the end of the year her account will have $200 plus the interest she earned. This interest is 12% of $200, which equals $24. Thus, at the end of the year, she will have $200 + $24 = $224 in her bank account.</p>
+
+            <h3 class="text-gray-800 font-bold text-xl mb-4">Simple Interest Formula</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">The formula for calculating simple interest is:</p>
+            <p class="text-gray-700 font-mono text-lg mb-4">I = Prt</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Where:</p>
+            <ul class="list-disc pl-5 mb-4">
+                <li><strong>P</strong> is the principal amount invested.</li>
+                <li><strong>r</strong> is the interest rate (expressed as a decimal).</li>
+                <li><strong>t</strong> is the time in years.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed mb-4">The total amount in the account, including interest, is given by:</p>
+            <p class="text-gray-700 font-mono text-lg mb-4">A = P(1 + rt)</p>
+        </section>
+
+        <!-- Example 1: Simple Interest -->
+        <section class="bg-gray-50 p-8 rounded-lg shadow-md mb-6">
+            <h3 class="text-gray-800 font-bold text-2xl mb-4">Example 1: Simple Interest Calculation</h3>
+            <p class="text-gray-700 leading-relaxed mb-4"><strong>Mr. Lablanc invests $500 at a simple interest rate of 6%. How much interest will he earn in one month? In six months? In one year?</strong></p>
+            <p class="text-gray-700 leading-relaxed mb-4">For the interest in one month, we use the simple interest formula I = Prt, where:</p>
+            <ul class="list-disc pl-5 mb-4">
+                <li>P = $500</li>
+                <li>r = 6% or 0.06 annually</li>
+                <li>t = 1 month or 1/12 years</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed mb-4">For one month: I = 500 × 0.06 × (1/12) = $2.50</p>
+            <p class="text-gray-700 leading-relaxed mb-4">For six months: I = 500 × 0.06 × (6/12) = $15.00</p>
+            <p class="text-gray-700 leading-relaxed mb-4">For one year: I = 500 × 0.06 × 1 = $30.00</p>
+        </section>
+
+        <!-- Compound Interest Section -->
+        <section class="bg-gray-50 p-8 rounded-lg shadow-md mb-6">
+            <h2 class="text-gray-800 font-bold text-2xl mb-4">Compound Interest</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Most financial institutions use compound interest, which means the interest is applied after each period (usually monthly or annually). The compound interest formula is:</p>
+            <p class="text-gray-700 font-mono text-lg mb-4">A = P(1 + i)^n</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Where:</p>
+            <ul class="list-disc pl-5 mb-4">
+                <li><strong>P</strong> is the initial principal.</li>
+                <li><strong>i</strong> is the interest rate per period.</li>
+                <li><strong>n</strong> is the number of periods.</li>
+            </ul>
+        </section>
+
+        <!-- Example 2: Compound Interest -->
+        <section class="bg-gray-50 p-8 rounded-lg shadow-md mb-6">
+            <h3 class="text-gray-800 font-bold text-2xl mb-4">Example 2: Compound Interest Calculation</h3>
+            <p class="text-gray-700 leading-relaxed mb-4"><strong>Suppose we deposit $1000 at 12% per year compounded monthly. How much will be in the account after six months?</strong></p>
+            <p class="text-gray-700 leading-relaxed mb-4">We use the compound interest formula A(n) = P(1 + i)^n. In this case:</p>
+            <ul class="list-disc pl-5 mb-4">
+                <li>P = $1000</li>
+                <li>r = 12% or 0.12</li>
+                <li>m = 12 (monthly compounding)</li>
+                <li>n = 6 months</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed mb-4">So, i = 0.12 / 12 = 0.01 and n = 6, we get:</p>
+            <p class="text-gray-700 leading-relaxed mb-4">A(6) = 1000 × (1 + 0.01)^6 = 1061.52</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Therefore, after six months, the amount in the account will be $1061.52.</p>
+
+            <p class="text-gray-700 leading-relaxed mb-4"><strong>Formula for the amount at any time t months:</strong></p>
+            <p class="text-gray-700 font-mono text-lg mb-4">A(t) = 1000(1 + 0.12/12)^t</p>
+            <p class="text-gray-700 leading-relaxed mb-4">From the graph of this function, we estimate it will take about 10 months for the account to reach $1,100.</p>
+        </section>
+
+    </main>
+
+    <!-- References Section -->
+    <footer class="container mx-auto p-8">
+        <h3 class="text-gray-800 font-bold text-2xl mb-4">References:</h3>
+        <ul class="list-disc pl-5">
+            <li><a href="https://www.txst.edu/mathworks/me-curriculum/math-explorations-for-teachers/online-learning-tools/personal-financial-literacy/math-of-finance-8th-grade-teks/interest.html?fbclid=IwZXh0bgNhZW0CMTAAAR3SAMJriExatkRud6pVNBeBVrgMIUo7FcneMOqYB-uR3A_DJLDaFuG040_aem_zzGXfyZM_tDgLz_n5-_JyQ" class="text-blue-600" target="_blank">Texas State University - Simple and Compound Interest</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

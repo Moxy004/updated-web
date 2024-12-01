@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math-Anaria</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans leading-normal tracking-normal h-screen flex flex-col">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">Math-Anaria</h1>
+            <nav class="space-x-4">
+                <a href="#lessons" class="text-gray-700 hover:text-blue-500">Lessons</a>
+                <a href="#quizzes" class="text-gray-700 hover:text-blue-500">Quizzes</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="flex-grow">
+        <section id="lessons" class="py-10">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-6 text-white">Explore Lessons</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- General Mathematics Card -->
+                    <div class="card bg-white shadow-2xl rounded-xl p-6 transition-transform transform hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">General Mathematics</h3>
+                        <p class="text-gray-600 mb-4">Learn the fundamentals of general mathematics.</p>
+                        <button onclick="openLessonModal()" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 active:scale-95 transition-all">Start Learning</button>
+                    </div>
+
+                    <!-- Other Cards... -->
+                    <div class="card bg-white shadow-2xl rounded-xl p-6 transition-transform transform hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Statistics and Probability</h3>
+                        <p class="text-gray-600 mb-4">Explore the different statistics and probability lessons</p>
+                        <button onclick="openStatProbModal()" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 active:scale-95 transition-all">Start Learning</button>
+                    </div>
+                    <div class="card bg-white shadow-2xl rounded-xl p-6 transition-transform transform hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">General Physics</h3>
+                        <p class="text-gray-600 mb-4">Dive into the world of angles and their relationships with fun examples.</p>
+                        <button onclick="openPhysicsModal()" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 active:scale-95 transition-all">Start Learning</button>
+                    </div>
+                    <div class="card bg-white shadow-2xl rounded-xl p-6 transition-transform transform hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">General Chemistry</h3>
+                        <p class="text-gray-600 mb-4">Dive into the world of science.</p>
+                        <button onclick="openChemModal()" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 active:scale-95 transition-all">Start Learning</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quizzes" class="py-10 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800">Take a Quiz</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card bg-white shadow-2xl rounded-xl p-6 transition-transform transform hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Algebra Quiz</h3>
+                        <p class="text-gray-600 mb-4">Test your knowledge of algebra concepts with this quiz.</p>
+                        <a href="#" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 active:scale-95 transition-all">Start Quiz</a>
+                    </div>
+                    <div class="card bg-white shadow-2xl rounded-xl p-6 transition-transform transform hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Geometry Quiz</h3>
+                        <p class="text-gray-600 mb-4">Challenge yourself with questions on geometric principles.</p>
+                        <a href="#" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 active:scale-95 transition-all">Start Quiz</a>
+                    </div>
+                    <div class="card bg-white shadow-2xl rounded-xl p-6 transition-transform transform hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Trigonometry Quiz</h3>
+                        <p class="text-gray-600 mb-4">Assess your understanding of trigonometric functions.</p>
+                        <a href="#" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 active:scale-95 transition-all">Start Quiz</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white shadow-md py-4">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-600">© 2023 Math-Anaria. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Lesson Selection -->
+    <div id="lessonModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+        <div class="bg-white p-8 rounded-xl shadow-lg w-1/2">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Select a Lesson</h2>
+            <ul class="space-y-4">
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onclick="openLesson1()">Lesson 1 - Basic Concepts of Function</button></li>
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onClick="openLesson2()">Lesson 2 - Exponential Functions</button></li>
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onClick="openLesson3()">Lesson 3 - Logarithmic Functions</button></li>
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onclick="openLesson4()">Lesson 4 - Interest</button></li>
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onclick="openLesson5()">Lesson 5 - Annuities</button></li>
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onclick="openLesson6()">Lesson 6 - Basic Concepts of Stocks and Bonds</button></li>
+            </ul>
+            <button onclick="closeLessonModal()" class="mt-6 w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal for Statistics Selection -->
+    <div id="statProbModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+        <div class="bg-white p-8 rounded-xl shadow-lg w-1/2">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Select a Lesson</h2>
+            <ul class="space-y-4">
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onclick="openStatLesson1()">Lesson 1 - Normal Variables</button></li>
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onClick="openStatLesson2()">Lesson 2 - Binomial and Poisson Distribution</button></li>
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onClick="openStatLesson3()">Lesson 3 - Normal Probability Distribution</button></li>
+            </ul>
+            <button onclick="closeStatProbModal()" class="mt-6 w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600">Close</button>
+        </div>
+    </div>
+
+    <div id="PhysicsModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+        <div class="bg-white p-8 rounded-xl shadow-lg w-1/2">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Select a Lesson</h2>
+            <ul class="space-y-4">
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onclick="openPhysicsLesson1()">Lesson 1 - Scalar and Vector</button></li>
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onClick="openPhysicsLesson2()">Lesson 2 - Kinetic-Rectilinear</button></li>
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onClick="openPhysicsLesson3()">Lesson 3 - Kinematics: 2D & 3D Space</button></li>
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onClick="openPhysicsLesson4()">Lesson 4 - Newtons Law of Motion</button></li>
+            </ul>
+            <button onclick="closePhysicsModal()" class="mt-6 w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600">Close</button>
+        </div>
+    </div>
+
+    <div id="ChemModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+        <div class="bg-white p-8 rounded-xl shadow-lg w-1/2">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Select a Lesson</h2>
+            <ul class="space-y-4">
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onclick="openChemLesson1()">Lesson 1 - Scalar and Vector</button></li>
+                <li><button class="w-full text-left px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600" onClick="openChemLesson2()">Lesson 2 - Kinetic-Rectilinear</button></li>
+            </ul>
+            <button onclick="closeChemModal()" class="mt-6 w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Open the modal
+        function openLessonModal() {
+            document.getElementById("lessonModal").classList.remove("hidden");
+        }
+
+        // Close the modal
+        function closeLessonModal() {
+            document.getElementById("lessonModal").classList.add("hidden");
+        }
+        
+        // Open the modal
+        function openStatProbModal() {
+            document.getElementById("statProbModal").classList.remove("hidden");
+        }
+
+        // Close the modal
+        function closeStatProbModal() {
+            document.getElementById("statProbModal").classList.add("hidden");
+        }
+
+        function openPhysicsModal() {
+            document.getElementById("PhysicsModal").classList.remove("hidden");
+        }
+
+        // Close the modal
+        function closePhysicsModal() {
+            document.getElementById("PhysicsModal").classList.add("hidden");
+        }
+
+        function openChemModal() {
+            document.getElementById("ChemModal").classList.remove("hidden");
+        }
+
+        // Close the modal
+        function closeChemModal() {
+            document.getElementById("ChemModal").classList.add("hidden");
+        }
+
+        function openLesson1(){
+            window.location.href="function.html";
+        }
+
+        function openLesson2(){
+            window.location.href="exponential.html";
+        }
+
+        function openLesson3(){
+            window.location.href="logarithmic.html";
+        }
+
+        function openLesson4(){
+            window.location.href="interest.html";
+        }
+
+        function openLesson5(){
+            window.location.href="annuities.html";
+        }
+
+        function openLesson6(){
+            window.location.href="stocks.html";
+        }
+
+        function openStatLesson1(){
+            window.location.href="normal.html";
+        }
+
+        function openStatLesson2(){
+            window.location.href="poisson.html";
+        }
+
+        function openStatLesson3(){
+            window.location.href="normaldistribution.html";
+        }
+
+        function openPhysicsLesson1(){
+            window.location.href="scalar.html";
+        }
+
+        function openPhysicsLesson2(){
+            window.location.href="recti.html";
+        }
+        
+        function openPhysicsLesson3(){
+            window.location.href="2d3d.html";
+        }
+
+        function openPhysicsLesson4(){
+            window.location.href="newton.html";
+        }
+
+        function openChemLesson1(){
+            window.location.href="units.html";
+        }
+
+        function openChemLesson2(){
+            window.location.href="stoic.html";
+        }
+    </script>
+
+</body>
+
+</html>

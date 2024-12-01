@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Block Motion</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+<body class="bg-gray-100 text-gray-700">
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white p-2">
+        <div class="max-w-1xl mx-auto px-6 py-3 justify-between items-center">
+            <h1 class="text-2xl font-bold">Physics Concepts</h1>
+            <h2 class="text-lg font-medium">Kinematics - 2D and 3D Space</h2>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-8">
+        <article class="bg-gray-50 p-4 rounded-lg shadow-md mb-4">
+        <!-- Section 1: Introduction -->
+        <section class="mb-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">Introduction</h3>
+            <p class="leading-relaxed">
+                Suppose you want to walk from one point to another in a city with uniform square blocks. Walking in a city often requires a two-dimensional path, such as the one shown in our example. While the straight-line path between two points may seem ideal, navigating city blocks introduces additional complexities. Let’s explore the physics behind this motion.
+            </p>
+        </article>
+        </section>
+
+        <!-- Section 2: Straight-Line Distance -->
+        <section class="mb-6">
+            <article class="bg-gray-50 p-4 rounded-lg shadow-md mb-4">
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">Calculating the Straight-Line Distance</h3>
+            <p class="leading-relaxed">
+                The shortest distance between two points is a straight line. Using the Pythagorean theorem, we can determine the straight-line distance when the path forms a right triangle. Consider walking 9 blocks east and 5 blocks north:
+            </p>
+            <p class="mt-2 leading-relaxed">
+                <strong>Formula:</strong> <code>c = \sqrt{a^2 + b^2}</code>
+            </p>
+            <p class="mt-2 leading-relaxed">
+                Substituting values: <code>c = \sqrt{(9)^2 + (5)^2} = 10.3</code> blocks.
+            </p>
+            <p class="mt-2 leading-relaxed">
+                This result demonstrates that the straight-line distance (10.3 blocks) is considerably shorter than the 14 blocks walked.
+            </p>
+            </article>
+        </section>
+
+        <!-- Section 3: Vector Representation -->
+        <section class="mb-6">
+            <article class="bg-gray-50 p-4 rounded-lg shadow-md mb-4">
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">Vector Representation</h3>
+            <p class="leading-relaxed">
+                In two-dimensional motion, the path can be represented by vectors. The horizontal and vertical components of the motion add together to form the straight-line path. For instance:
+            </p>
+            <ul class="list-disc list-inside mt-2">
+                <li>A 9-block displacement east (horizontal component).</li>
+                <li>A 5-block displacement north (vertical component).</li>
+                <li>These vectors form a right triangle, with the hypotenuse representing the total displacement.</li>
+            </ul>
+            </article>
+        </section>
+
+        <!-- Section 4: Independence of Motion -->
+        <section class="mb-6">
+            <article class="bg-gray-50 p-4 rounded-lg shadow-md mb-4">
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">Independence of Motion</h3>
+            <p class="leading-relaxed">
+                The horizontal and vertical components of two-dimensional motion are independent. For example, consider two baseballs: one dropped vertically and the other thrown horizontally. Despite differences in horizontal velocity, their vertical motions are identical, demonstrating that vertical and horizontal motions do not influence each other.
+            </p>
+            </article>
+        </section>
+
+        <!-- References Section -->
+        <section>
+            <article class="bg-gray-50 p-4 rounded-lg shadow-md mb-4">
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">References</h3>
+            <ul class="list-disc list-inside">
+                <li><a href="https://phys.libretexts.org" class="text-blue-600">LibreTexts - Kinematics in Two Dimensions</a></li>
+            </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

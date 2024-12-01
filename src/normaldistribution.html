@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Normal Distribution</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white p-2">
+        <div class="max-w-1xl mx-auto px-6 py-3 justify-between items-center">
+            <h1 class="text-2xl font-bold text-white-600">Math-Anaria</h1>
+        <h2 class="text-lg font-medium">Statistics and Probability Module</h2>
+        <h3 class="text-md">Topic: Normal Distribution</h3>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="p-8">
+
+        <!-- Section 1: Introduction -->
+        <section class="bg-white p-8 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-bold text-blue-700 mb-4">The Normal Distribution</h2>
+            <p class="leading-relaxed text-gray-700 mb-4">
+                It is often the case with medical data that the histogram of a continuous variable obtained from a single measurement on different subjects will have a characteristic "bell-shaped" distribution known as a Normal distribution.
+                One such example is the histogram of the birth weight (in kilograms) of the 3,226 newborn babies shown in Figure 1.
+            </p>
+            <figure class="mb-6">
+                <img src="../pictures/image.png" alt="Distribution of birth weight in 3,226 newborn babies" class="rounded-lg shadow-md">
+                <figcaption class="text-sm text-gray-600 mt-2">Figure 1: Distribution of birth weight in 3,226 newborn babies (data from O' Cathain et al 2002)</figcaption>
+            </figure>
+            <p class="leading-relaxed text-gray-700 mb-4">
+                The histogram of the sample data is an estimate of the population distribution of birth weights in newborn babies. This population distribution can be estimated by the superimposed smooth "bell-shaped" curve or Normal distribution shown.
+                We presume that if we were able to look at the entire population of newborn babies, the distribution of birth weight would have exactly the Normal shape.
+            </p>
+        </section>
+
+        <!-- Section 2: Parameters of the Normal Distribution -->
+        <section class="bg-white p-8 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-bold text-blue-700 mb-4">Parameters of the Normal Distribution</h2>
+            <p class="leading-relaxed text-gray-700 mb-4">
+                The Normal distribution is completely described by two parameters μ and σ, where μ represents the population mean, or center of the distribution, and σ the population standard deviation.
+                It is symmetrically distributed around the mean. Populations with small values of the standard deviation σ have a distribution concentrated close to the center μ; those with large standard deviation have a distribution widely spread along the measurement axis.
+            </p>
+            <p class="leading-relaxed text-gray-700 mb-4">
+                One mathematical property of the Normal distribution is that exactly 95% of the distribution lies between μ − (1.96 × σ) and μ + (1.96 × σ). Changing the multiplier 1.96 to 2.58, exactly 99% of the Normal distribution lies in the corresponding interval.
+            </p>
+        </section>
+
+        <!-- Section 3: Estimation of Parameters from Sample Data -->
+        <section class="bg-white p-8 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-bold text-blue-700 mb-4">Estimation from Sample Data</h2>
+            <p class="leading-relaxed text-gray-700 mb-4">
+                In practice, the two parameters of the Normal distribution, μ and σ, must be estimated from the sample data. For this purpose, a random sample from the population is first taken. 
+                The sample mean and the sample standard deviation are then calculated. If a sample is taken from such a normal distribution, and provided the sample is not too small, 
+                then approximately 95% of the sample lies within the interval: x̄ − [1.96 × SD(x̄)] to x̄ + [1.96 × SD(x̄)].
+            </p>
+        </section>
+
+        <!-- Section 4: Example of Reference Range -->
+        <section class="bg-white p-8 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-bold text-blue-700 mb-4">Example of Reference Range</h2>
+            <p class="leading-relaxed text-gray-700 mb-4">
+                We can use the fact that our sample birth weight data appear Normally distributed to calculate a reference range. 
+                About 95% of the observations (from a Normal distribution) lie within ±1.96 SDs of the mean. So a reference range for our sample of babies, using the values given in the histogram above, is:
+                3.39 kg − [1.96 × 0.55] to 3.39 kg + [1.96 × 0.55], which results in a range of 2.31 kg to 4.47 kg.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- References Section -->
+    <section class="p-8">
+        <h2 class="text-2xl font-bold text-blue-700 mb-4">References</h2>
+        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+            <li><a href="https://www.investopedia.com/terms/r/random-variable.asp" class="text-blue-600 hover:underline">Kenton, W. (2024, June 27). Random Variable: definition, types, how it's used, and example. Investopedia.</a></li>
+            <li><a href="https://www.who.int/health-topics/low-birth-weight" class="text-blue-600 hover:underline">World Health Organization. (n.d.). Low birth weight.</a></li>
+            <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1459445/" class="text-blue-600 hover:underline">O'Cathain, A., et al. (2002). The distribution of birth weights in a sample of newborn babies.</a></li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
